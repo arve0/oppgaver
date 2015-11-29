@@ -1,25 +1,41 @@
-<html><head><meta charset="utf-8"/><meta name="viewport" content="width=device-width, initial-scale=1"/><title>Kryptonøtt | Kodeklubben</title><link href="../../assets/style.min.css" rel="stylesheet"/></head><body><div class="container"><div class="row"><div class="col-xs-12"><div class="top-menu"><a href="../../index.html" class="btn btn-default"><span aria-hidden="true" class="glyphicon glyphicon-home"></span> Hjem</a></div></div><div class="col-xs-12"><header class="clearfix"><img src="../../assets/img/ccno_logo.png" class="logo hidden-xs"/><h1 class="title">Kryptonøtt</h1><div class="lesson-icons"><div class="level"><img title="Level 4" src="../../assets/img/level4.png"/><span>Expert</span></div><div class="course"><img src="../logo-white.png"/><span>Python</span></div><div class="pdf"><a href="/python/kryptonott/kryptonott.pdf" title="Download PDF" class="download"><span class="glyphicon glyphicon-save-file"></span></a><span>PDF </span></div></div></header></div><div class="col-xs-12"><div class="content"><section id="introduksjon" class="level1 intro">
-<h1>Introduksjon</h1>
-<p>Kryptering har lenge vært i bruk i kommunikasjon. Faktisk brukte de det for nesten 4000 år siden!! I tillegg er det artig å sende hemmelige meldinger :-) Før du begynner på denne oppgaven, anbefales det at du har gjort <a href="../hemmelige_koder/hemmelige_koder.html">Hemmelige koder</a> først.</p>
-<p>Denne oppgaven er en nøtt. Det vil si at du skal finne ut av det meste selv. Sitter du helt fast må du gjerne spørre en CodeMaster.</p>
+<html><head><meta charset="utf-8"/><meta name="viewport" content="width=device-width, initial-scale=1"/><title>Kryptonøtt | Kodeklubben</title><link href="../../assets/style.min.css" rel="stylesheet"/><script type="text/javascript">// convert url relative to current file
+// ex: python/index.html -> ../python/index.html
+function relative(url) {
+  var urlRoot = '../..';
+  if (urlRoot !== '') {
+    return urlRoot + '/' + url;
+  }
+  return url;
+}</script></head><body><div class="container"><div class="row"><div class="col-xs-12"><div class="top-menu"><div class="navigation"><a href="../../index.html"><span aria-hidden="true" class="glyphicon glyphicon-home"></span><span>&nbsp;</span><span data-i18n="html=layout.home">Forside</span></a><span>&nbsp;/&nbsp;</span><a href="..">Python</a></div><a data-i18n="title=layout.takeTour" title="Ta en omvisning på siden" data-placement="bottom" href="#" class="intro"><span class="icon"></span><span class="text">Intro</span></a><form class="search"><input type="text" data-i18n="placeholder=layout.search" placeholder="Søk" class="form-control"/></form></div></div><div class="search"><h1 data-i18n="html=layout.searchResults">Søkeresultat</h1><div class="results"></div></div><div class="col-xs-12"><header class="clearfix"><img src="../../assets/img/ccno_logo.png" class="logo hidden-xs"/><h1 class="title">Kryptonøtt</h1><div class="lesson-icons"><div class="level"><img title="Level 4" src="../../assets/img/level4.png"/><span data-i18n="html=layout.levelNames.4">Ekspert</span></div><a href=".." class="course"><img src="../logo-white.png"/><span>Python</span></a><div class="pdf"><a href="/python/kryptonott/kryptonott.pdf" data-i18n="title=layout.downloadPdf" title="Last ned PDF"><span class="icon"></span><span class="text">PDF</span></a></div></div></header></div><div class="col-xs-12"><div class="content"><section class="intro" id="introduksjon">
+<h1 class="intro" id="introduksjon">Introduksjon</h1>
+<p>Kryptering har lenge vært i bruk i kommunikasjon. Faktisk brukte de
+det for nesten 4000 år siden!! I tillegg er det artig å sende
+hemmelige meldinger :-) Før du begynner på denne oppgaven, anbefales
+det at du har gjort <a href="../hemmelige_koder/hemmelige_koder.html">Hemmelige koder</a> først.</p>
+<p>Denne oppgaven er en nøtt. Det vil si at du skal finne ut av det meste selv.
+Sitter du helt fast må du gjerne spørre en CodeMaster.</p>
 </section>
-<section id="kryptering-med-vigenere-metoden" class="level1 activity">
-<h1>Kryptering med vigenere-metoden</h1>
-<p>Vigenere er litt smartere enn krypteringen i <a href="../hemmelige_koder/hemmelige_koder.html">Hemmelige koder</a>, men den er ikke så annerledes. I stegene under skal du prøve å forstå vigenere-koden. Det er viktig at du forstår denne koden, ettersom du skal lage nesten lik kode selv.</p>
-<section id="python-2" class="level2 protip">
-<h2>Python 2</h2>
-<p>Denne koden fungerer best med python 3. Dersom du har python 2, må du legge en <code>u</code> foran alle strenger. Altså <code class="lang-java"><span class="hljs-string">'asdf'</span></code> må skrives slik som dette: <code class="lang-python"><span class="hljs-string">u'asdf'</span></code>.</p>
+<section class="activity" id="kryptering-med-vigenere-metoden">
+<h1 class="activity" id="kryptering-med-vigenere-metoden">Kryptering med vigenere-metoden</h1>
+<p>Vigenere er litt smartere enn krypteringen i <a href="../hemmelige_koder/hemmelige_koder.html">Hemmelige koder</a>,
+men den er ikke så annerledes. I stegene under skal du prøve å forstå
+vigenere-koden. Det er viktig at du forstår denne koden, ettersom du skal lage
+nesten lik kode selv.</p>
+<section class="protip" id="python-2">
+<h2 class="protip" id="python-2">Python 2</h2>
+<p>Denne koden fungerer best med python 3. Dersom du har python 2, må du legge en
+<code>u</code> foran alle strenger. Altså <code>'asdf'</code> må skrives slik som dette: <code>u'asdf'</code>.</p>
 </section>
-<section id="lag-kommentarer-med-forklaring" class="level2 check">
-<h2>Lag kommentarer med forklaring</h2>
+<section class="check" id="lag-kommentarer-med-forklaring">
+<h2 class="check" id="lag-kommentarer-med-forklaring">Lag kommentarer med forklaring</h2>
 <ul>
 <li>Les koden under.</li>
 <li>Hva er forskjellig fra <a href="../hemmelige_koder/hemmelige_koder.html">Hemmelige koder</a>?</li>
-<li>Hva gjør <code class="lang-css"><span class="hljs-tag">alphabet</span><span class="hljs-class">.find</span></code>?</li>
-<li>Hva betyr det at <code class="lang-css"><span class="hljs-tag">alphabet</span><span class="hljs-class">.find</span></code> gir <code>-1</code> som svar?</li>
-<li>Legg til kommentarer med <code class="lang-python"><span class="hljs-comment">#</span></code> over/bak hver linjene med din forklaring.</li>
+<li>Hva gjør <code>alphabet.find</code>?</li>
+<li>Hva betyr det at <code>alphabet.find</code> gir <code>-1</code> som svar?</li>
+<li>Legg til kommentarer med <code>#</code> over/bak hver linjene med din forklaring.</li>
 </ul>
-<pre class="sourceCode python"><code class="sourceCode python lang-python"><span class="hljs-string">"""Vigenere encoding, by Arve Seljebu(arve@seljebu.no), MIT License, 2014"""</span>
+<pre><code class="python"><span class="hljs-string">"""Vigenere encoding, by Arve Seljebu(arve@seljebu.no), MIT License, 2014"""</span>
 
 alphabet = <span class="hljs-string">'ABCDEFGHIJKLMNOPQRSTUVWXYZÆØÅabcdefghijklmnopqrstuvwxyzæøå .,?-_;:+1234567890"'</span>
 
@@ -47,24 +63,29 @@ message = <span class="hljs-string">'My first computer program was a song called
 keyword = <span class="hljs-string">'source'</span>
 
 encrypted = vigenere_encode(message, keyword)
-print(encrypted)</code></pre>
+print(encrypted)
+</code></pre>
 </section>
-<section id="hint" class="level2 protip">
-<h2>Hint</h2>
-<p>Du kan bruke kommandoen <code class="lang-java">help(<span class="hljs-string">'funksjonsnavn'</span>)</code> i python-terminalen for lese manualen. Prøv disse:</p>
+<section class="protip" id="hint">
+<h2 class="protip" id="hint">Hint</h2>
+<p>Du kan bruke kommandoen <code>help('funksjonsnavn')</code> i python-terminalen for lese
+manualen. Prøv disse:</p>
 <ul>
-<li><code class="lang-java">help(<span class="hljs-string">'def'</span>)</code></li>
-<li><code class="lang-java">help(<span class="hljs-string">'len'</span>)</code></li>
-<li><code class="lang-java">help(<span class="hljs-string">'vigenere_encode'</span>)</code></li>
+<li><code>help('def')</code></li>
+<li><code>help('len')</code></li>
+<li><code>help('vigenere_encode')</code></li>
 </ul>
 </section>
 </section>
-<section id="dekryptering" class="level1 activity">
-<h1>Dekryptering</h1>
-<p>Vi skal nå se på hvordan vi kan dekryptere meldinger. Etterhvert vil vi til og med kunne lese hemmelige meldinger uten å kjenne den hemmelige nøkkelen på forhånd.</p>
-<section id="lag-vigenere_decode" class="level2 check">
-<h2>Lag vigenere_decode</h2>
-<p>Lag en funksjon som gjør det motsatte av den over (altså dekrypterer). Koden skal se nesten helt lik ut som over.</p>
+<section class="activity" id="dekryptering">
+<h1 class="activity" id="dekryptering">Dekryptering</h1>
+<p>Vi skal nå se på hvordan vi kan dekryptere meldinger. Etterhvert vil
+vi til og med kunne lese hemmelige meldinger uten å kjenne den
+hemmelige nøkkelen på forhånd.</p>
+<section class="check" id="lag-vigenere-decode">
+<h2 class="check" id="lag-vigenere-decode">Lag vigenere_decode</h2>
+<p>Lag en funksjon som gjør det motsatte av den over (altså dekrypterer). Koden skal
+se nesten helt lik ut som over.</p>
 <ul>
 <li>Funksjonen skal ta inn to parametre: en kodet tekst og en nøkkel.</li>
 <li>Den skal dekryptere den kodede teksten med nøkkelen.</li>
@@ -73,31 +94,39 @@ print(encrypted)</code></pre>
 <li>Kanskje du kan dele nøkkelen og sende den krypterte teksten til en venn?</li>
 </ul>
 </section>
-<section id="cracking" class="level2 check">
-<h2>Cracking</h2>
-<p>Du skal nå prøve å knekke en kodet streng. Dette er vanskelig, så du må lage en plan først. Strengen er:</p>
-<p><code class="lang-java">q0Ø:;AI<span class="hljs-string">"E47FRBQNBG4WNB8B4LQN8ERKC88U8GEN?T6LaNBG4GØ"</span><span class="hljs-string">"N6K086HB"</span>Ø<span class="hljs-number">8</span>CRHW<span class="hljs-string">"+LS79Ø"</span><span class="hljs-string">"N29QCLN5WNEBS8GENBG4FØ47a</span></code></p>
+<section class="check" id="cracking">
+<h2 class="check" id="cracking">Cracking</h2>
+<p>Du skal nå prøve å knekke en kodet streng. Dette er vanskelig, så du må lage en
+plan først. Strengen er:</p>
+<p><code>q0Ø:;AI&quot;E47FRBQNBG4WNB8B4LQN8ERKC88U8GEN?T6LaNBG4GØ&quot;&quot;N6K086HB&quot;Ø8CRHW&quot;+LS79Ø&quot;&quot;N29QCLN5WNEBS8GENBG4FØ47a</code></p>
 </section>
-<section id="hint-1" class="level2 protip">
-<h2>Hint</h2>
+<section class="protip" id="hint-2">
+<h2 class="protip" id="hint-2">Hint</h2>
 <ul>
 <li>Nøkkelen er seks små bokstaver.</li>
 <li>Språket i setningen er engelsk.</li>
-<li>Finn en metode å sjekke om den dekrypterte strengen er korrekt. For eksempel kan du tenke på hvor mange mellomrom den burde inneholde?</li>
-<li>For å generere mulige nøkler kan du bruke <code class="lang-css"><span class="hljs-tag">itertools</span><span class="hljs-class">.product</span>()</code>, prøv for eksempel å se hva du får om du looper over <code class="lang-lua">itertools.product(<span class="hljs-string">'abcd'</span>, <span class="hljs-keyword">repeat</span>=<span class="hljs-number">2</span>)</code>.</li>
+<li>Finn en metode å sjekke om den dekrypterte strengen er korrekt. For eksempel kan du tenke på hvor
+mange mellomrom den burde inneholde?</li>
+<li>For å generere mulige nøkler kan du bruke <code>itertools.product()</code>, prøv for eksempel å se hva du får om du looper over <code>itertools.product('abcd', repeat=2)</code>.</li>
 </ul>
 </section>
-<section id="bruk-en-ordbok" class="level2 check">
-<h2>Bruk en ordbok</h2>
-<p>Sålenge vi har brukt engelske ord som nøkler er det mye raskere å knekke krypteringen med en ordbok. En ordbok finner du på alle Linux/Mac/Unix-maskiner under <strong>/usr/share/dict</strong>. Bruker du Windows, kan du laste ned en slik fil fra internett. Søk på <em>large english vocabulary word lists</em>.</p>
+<section class="check" id="bruk-en-ordbok">
+<h2 class="check" id="bruk-en-ordbok">Bruk en ordbok</h2>
+<p>Sålenge vi har brukt engelske ord som nøkler er det mye raskere å knekke
+krypteringen med en ordbok. En ordbok finner du på alle Linux/Mac/Unix-maskiner
+under <strong>/usr/share/dict</strong>. Bruker du Windows, kan du laste ned en slik fil fra
+internett. Søk på <em>large english vocabulary word lists</em>.</p>
 <p>Disse filene inneholder alle ord som finnes i en engelsk ordbok, separert med linjeskift. Finn ut hvordan du kan laste inn ordene fra filen (pass på at du fjerner linjeskiftene) og bruk dem til å dekryptere en ny streng:</p>
-<p><code class="lang-css"><span class="hljs-rule"><span class="hljs-attribute">t-JO</span>:<span class="hljs-value">BK0aM,:CQ+ÆAGW?FJGB0KVCGMQ6SQN<span class="hljs-string">"GAIDL-PÅ7954E:7Jr,IÆoCF0M"</span>CQdØVlHD53CÅ</span></span>;<span class="hljs-tag">IA2DMG5</span>Ø<span class="hljs-tag">HD</span>Ø<span class="hljs-tag">V</span>å<span class="hljs-rule"><span class="hljs-attribute">L</span>:<span class="hljs-value">JQØ<span class="hljs-number">439</span>LRBBVEMTBÆ<span class="hljs-number">6</span>CF0M<span class="hljs-string">"CQNAG8G1V6LÅ8FF4Z</span></span></span></code></p>
-<p>Bruk metodene du laget i oppgaven over for å detektere om vi har funnet riktig nøkkel. Dersom du kjører scriptet ditt med kommandoen <code class="lang-css"><span class="hljs-tag">time</span> <span class="hljs-tag">python3</span> <span class="hljs-tag">vigenere</span><span class="hljs-class">.py</span></code> kan du se hvor lang tid den bruker.</p>
+<p><code>t-JO:BK0aM,:CQ+ÆAGW?FJGB0KVCGMQ6SQN&quot;GAIDL-PÅ7954E:7Jr,IÆoCF0M&quot;CQdØVlHD53CÅ;IA2DMG5ØHDØVåL:JQØ439LRBBVEMTBÆ6CF0M&quot;CQNAG8G1V6LÅ8FF4Z</code></p>
+<p>Bruk metodene du laget i oppgaven over for å detektere om vi har funnet riktig
+nøkkel. Dersom du kjører scriptet ditt med kommandoen <code>time python3 vigenere.py</code>
+kan du se hvor lang tid den bruker.</p>
 </section>
-<section id="premie" class="level2 flag">
-<h2>Premie</h2>
-<p>Dersom du klarer denne nøtten, spanderer jeg gjerne en sjokolade på deg dersom du deler koden din. Send en epost til arve@seljebu.no :-)</p>
+<section class="flag" id="premie">
+<h2 class="flag" id="premie">Premie</h2>
+<p>Dersom du klarer denne nøtten, spanderer jeg gjerne en sjokolade på deg dersom
+du deler koden din. Send en epost til arve@seljebu.no :-)</p>
 </section>
 </section>
-</div></div><div class="col-xs-12"><div id="footer" class="clearfix"><div class="license"><p><strong>Lisens:</strong></p><a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/deed.no">CC BY-SA 4.0</a></div><div class="author"><p><strong>Forfatter:</strong></p><p>Arve Seljebu</p>
-</div></div></div></div></div><script src="../../assets/script.min.js"></script></body></html>
+</div><div class="improve"><h3>Forbedre denne siden</h3><p>Funnet en feil? Kunne noe vært bedre? Hvis ja, vennligst gi oss tilbakemelding ved å lage en sak på Github eller fiks feilen selv om du kan. Vi er takknemlige for enhver tilbakemelding!</p><a href="https://github.com/kodeklubben/oppgaver/issues/new?title=Python: Kryptonøtt&amp;body=Beskriv ditt problem..." class="issue">Rapporter et problem</a><a href="https://github.com/kodeklubben/oppgaver/tree/master/src/python/kryptonott" class="code">Vis koden og fiks selv</a></div></div><div class="col-xs-12"><div id="footer" class="clearfix"><div class="license"><p><strong data-i18n="html=layout.license">Lisens</strong><strong>:</strong></p><a rel="license" data-i18n="href=layout.licenseUrl" href="http://creativecommons.org/licenses/by-sa/4.0/deed.no">CC BY-SA 4.0</a></div><div class="author"><p><strong data-i18n="html=layout.author">Forfatter</strong><strong>:</strong></p><p>Arve Seljebu</p>
+</div></div></div></div></div><div class="intro-question modal fade"><div class="modal-dialog"><div class="modal-content"><div class="modal-header"><button type="button" data-dismiss="modal" aria-label="Close" class="close"><span aria-hidden="true">&times;</span></button><h4 data-i18n="html=layout.greeting" class="modal-title">Hei der!</h4></div><div class="modal-body"><p data-i18n="html=layout.askTour">Ser ut som dette er ditt første besøk, vil du ha en omvisning?</p></div><div class="modal-footer"><button data-i18n="html=layout.yes" class="btn btn-success">Ja!</button><button data-dismiss="modal" data-i18n="html=layout.no" class="btn btn-danger">Nei takk</button></div></div></div></div><script src="../../assets/vendor.min.js"></script><script src="../../assets/script.min.js"></script></body></html>

@@ -1,36 +1,87 @@
-<html><head><meta charset="utf-8"/><meta name="viewport" content="width=device-width, initial-scale=1"/><title>Scratch for Viderekommende | Kodeklubben</title><link href="../assets/style.min.css" rel="stylesheet"/></head><body><div class="container"><div class="row"><div class="col-xs-12"><div class="top-menu"><a href="../index.html" class="btn btn-default"><span aria-hidden="true" class="glyphicon glyphicon-home"></span> Hjem</a></div></div><div class="col-xs-12"><header class="clearfix"><img src="../assets/img/ccno_logo.png" class="logo hidden-xs"/><h1 class="title">Scratch for Viderekommende</h1><div class="lesson-icons"><div class="level"><img title="Level undefined" src="../assets/img/levelundefined.png"/><span></span></div><div class="course"><img src="logo-white.png"/><span>Scratch</span></div><div class="pdf"><a href="/scratch/kodeklubbens_kurs_2.pdf" title="Download PDF" class="download"><span class="glyphicon glyphicon-save-file"></span></a><span>PDF </span></div></div></header></div><div class="col-xs-12"><div class="content"><section id="scratch-for-viderekommende" class="level1">
-<h1>Scratch for viderekommende</h1>
-<p>Dette kurset er ment for interesserte som vil lære grunnleggende programmering, og som har litt erfaring fra å lage enkle spill og programmer i Scratch.</p>
-<p>Sammenlignet med en vanlig leksjon fra Kodeklubben vil vi gå litt mer i detalj rundt konseptene i bakgrunnen, samt introdusere noen av de noe mer avanserte konseptene og teknikkene man vanligvis ikke møter i de vanlige leksjonene.</p>
-<section id="kursplan" class="level2">
-<h2>Kursplan</h2>
-<p>Tema for leksjonene: + Scratch-community? + Variabler, for alle vs for denne + Forskjellige typer løkker + Aritmetikk + Tester (inkludert sansende blokker) + Meldinger + Prototypeorientert programmering (kloner) + Lister + Bevegelig bakgrunn + Bakgrunn bestående av flere figurer + Interaksjon med verden utenfor Scratch (webcam, mikrofon, arduino, MakeyMakey) + Bruke scenen til å kontrollere scriptet (MVC) + Struktur for større spill/programmer + Bruk av input fra tastaturet + Sanseblokker vs for alltid-løkke for å lese tastetrykk (piltaster)</p>
+<html><head><meta charset="utf-8"/><meta name="viewport" content="width=device-width, initial-scale=1"/><title>Scratch for Viderekommende | Kodeklubben</title><link href="../assets/style.min.css" rel="stylesheet"/><script type="text/javascript">// convert url relative to current file
+// ex: python/index.html -> ../python/index.html
+function relative(url) {
+  var urlRoot = '..';
+  if (urlRoot !== '') {
+    return urlRoot + '/' + url;
+  }
+  return url;
+}</script></head><body><div class="container"><div class="row"><div class="col-xs-12"><div class="top-menu"><div class="navigation"><a href="../index.html"><span aria-hidden="true" class="glyphicon glyphicon-home"></span><span>&nbsp;</span><span data-i18n="html=layout.home">Forside</span></a><span>&nbsp;/&nbsp;</span><a href="">Scratch</a></div><a data-i18n="title=layout.takeTour" title="Ta en omvisning på siden" data-placement="bottom" href="#" class="intro"><span class="icon"></span><span class="text">Intro</span></a><form class="search"><input type="text" data-i18n="placeholder=layout.search" placeholder="Søk" class="form-control"/></form></div></div><div class="search"><h1 data-i18n="html=layout.searchResults">Søkeresultat</h1><div class="results"></div></div><div class="col-xs-12"><header class="clearfix"><img src="../assets/img/ccno_logo.png" class="logo hidden-xs"/><h1 class="title">Scratch for Viderekommende</h1><div class="lesson-icons"><a href="" class="course"><img src="logo-white.png"/><span>Scratch</span></a><div class="pdf"><a href="/scratch/kodeklubbens_kurs_2.pdf" data-i18n="title=layout.downloadPdf" title="Last ned PDF"><span class="icon"></span><span class="text">PDF</span></a></div><div class="readme"><a href="README.html"><span class="icon"></span><span data-i18n="html=layout.teacherNotes" class="text">Lærerveiledning</span></a></div></div></header></div><div class="col-xs-12"><div class="content"><section>
+<h1 id="scratch-for-viderekommende">Scratch for viderekommende</h1>
+<p>Dette kurset er ment for interesserte som vil lære grunnleggende
+programmering, og som har litt erfaring fra å lage enkle spill og
+programmer i Scratch.</p>
+<p>Sammenlignet med en vanlig leksjon fra Kodeklubben vil vi gå litt mer
+i detalj rundt konseptene i bakgrunnen, samt introdusere noen av de
+noe mer avanserte konseptene og teknikkene man vanligvis ikke møter i
+de vanlige leksjonene.</p>
+<section>
+<h2 id="kursplan">Kursplan</h2>
+<p>Tema for leksjonene:</p>
+<ul>
+<li>Scratch-community?</li>
+<li>Variabler, for alle vs for denne</li>
+<li>Forskjellige typer løkker</li>
+<li>Aritmetikk</li>
+<li>Tester (inkludert sansende blokker)</li>
+<li>Meldinger</li>
+<li>Prototypeorientert programmering (kloner)</li>
+<li>Lister</li>
+<li>Bevegelig bakgrunn</li>
+<li>Bakgrunn bestående av flere figurer</li>
+<li>Interaksjon med verden utenfor Scratch (webcam, mikrofon, arduino, MakeyMakey)</li>
+<li>Bruke scenen til å kontrollere scriptet (MVC)</li>
+<li>Struktur for større spill/programmer</li>
+<li>Bruk av input fra tastaturet</li>
+<li>Sanseblokker vs for alltid-løkke for å lese tastetrykk (piltaster)</li>
+</ul>
 </section>
-<section id="oppgaver" class="level2">
-<h2>Oppgaver</h2>
-<p>Oppgavetekstene er litt mer åpne enn i de andre leksjonene. Ikke all koden er tilgjengelig direkte (men sjekk bakerst i kodeheftet for en komplett listing?), og det legges opp til at elevene prøver en del selv, men fortsatt under veiledning.</p>
+<section>
+<h2 id="oppgaver">Oppgaver</h2>
+<p>Oppgavetekstene er litt mer åpne enn i de andre leksjonene. Ikke all
+koden er tilgjengelig direkte (men sjekk bakerst i kodeheftet for en
+komplett listing?), og det legges opp til at elevene prøver en del
+selv, men fortsatt under veiledning.</p>
 <p>Tre prosjekter:</p>
-<ol type="1">
-<li>Hvor i all verden (3 leksjoner)
+<ol>
+<li>Hvor i all verden (3 leksjoner)</li>
+</ol>
 <ul>
 <li>Piltaster for å flytte figur, Meldinger</li>
 <li>Bevegelig bakgrunn / bakgrunn bestående av flere figurer</li>
 <li>Lister, Struktur for større spill / programmer</li>
-</ul></li>
-<li>Hoppehelt (1 leksjon)
+</ul>
+<ol start="2">
+<li>Hoppehelt (1 leksjon)</li>
+</ol>
 <ul>
 <li>Kloner</li>
-</ul></li>
-<li>3D flakser (2 leksjoner)
+</ul>
+<ol start="3">
+<li>3D flakser (2 leksjoner)</li>
+</ol>
 <ul>
 <li>Aritmetikk, Kloner</li>
 <li>Tester, variabler for hastighet, størrelse</li>
-</ul></li>
-</ol>
+</ul>
 </section>
 </section>
-</div></div><div class="col-xs-12"><div id="footer" class="clearfix"><div class="license"><p><strong>Lisens:</strong></p><a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/deed.no">CC BY-SA 4.0</a></div><div class="author"><p><strong>Forfatter:</strong></p><p>Geir Arne Hjelle og Gudbrand Tandberg</p>
-</div></div></div></div></div><script src="../assets/script.min.js"></script><script>$(document).ready(function(){
-  scratchblocks2.load_language(scratchblocks2._translations['nb']);
-  scratchblocks2.parse("pre.blocks");
+</div><div class="improve"><h3>Forbedre denne siden</h3><p>Funnet en feil? Kunne noe vært bedre? Hvis ja, vennligst gi oss tilbakemelding ved å lage en sak på Github eller fiks feilen selv om du kan. Vi er takknemlige for enhver tilbakemelding!</p><a href="https://github.com/kodeklubben/oppgaver/issues/new?title=Scratch: Scratch for Viderekommende&amp;body=Beskriv ditt problem..." class="issue">Rapporter et problem</a><a href="https://github.com/kodeklubben/oppgaver/tree/master/src/scratch" class="code">Vis koden og fiks selv</a></div></div><div class="col-xs-12"><div id="footer" class="clearfix"><div class="license"><p><strong data-i18n="html=layout.license">Lisens</strong><strong>:</strong></p><a rel="license" data-i18n="href=layout.licenseUrl" href="http://creativecommons.org/licenses/by-sa/4.0/deed.no">CC BY-SA 4.0</a></div><div class="author"><p><strong data-i18n="html=layout.author">Forfatter</strong><strong>:</strong></p><p>Geir Arne Hjelle og Gudbrand Tandberg</p>
+</div></div></div></div></div><div class="intro-question modal fade"><div class="modal-dialog"><div class="modal-content"><div class="modal-header"><button type="button" data-dismiss="modal" aria-label="Close" class="close"><span aria-hidden="true">&times;</span></button><h4 data-i18n="html=layout.greeting" class="modal-title">Hei der!</h4></div><div class="modal-body"><p data-i18n="html=layout.askTour">Ser ut som dette er ditt første besøk, vil du ha en omvisning?</p></div><div class="modal-footer"><button data-i18n="html=layout.yes" class="btn btn-success">Ja!</button><button data-dismiss="modal" data-i18n="html=layout.no" class="btn btn-danger">Nei takk</button></div></div></div></div><script src="../assets/vendor.min.js"></script><script src="../assets/script.min.js"></script><script>// bind shim for phantomJS
+Function.prototype.bind = Function.prototype.bind || function (thisp) {
+  var fn = this;
+  var args = Array.prototype.slice.call(arguments, 1);
+  return function () {
+    return fn.apply(thisp, args);
+  };
+};
+$(document).ready(function(){
+  $('pre').has('code.blocks').addClass('blocks');
+  scratchblocks.renderMatching('code.blocks', {
+    languages: ['nb', 'en']
+  });
+  scratchblocks.renderMatching('code.b', {
+    languages: ['nb', 'en'],
+    inline: true
+  });
 });</script></body></html>
